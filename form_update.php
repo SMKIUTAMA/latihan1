@@ -15,6 +15,7 @@
 </head>
  <body>
  	<?php 
+ 		include "koneksi.php";
  		$query="SELECT * FROM tb_latihan1 WHERE id = '$_GET[id]'";
  		$hasil=mysqli_query($conn,$query);
  		$row=mysqli_fetch_array($hasil);
