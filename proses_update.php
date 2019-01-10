@@ -21,7 +21,7 @@
 
          if($update == true){
 			echo"<script>
-			    	confirm('Anda Yakin Ingin Mengubah?');
+			    	alert('Data berhasil diubah');
 					document.location.href='index.php';
 				</script>";
 		}else{
