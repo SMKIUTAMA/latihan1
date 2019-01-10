@@ -10,17 +10,18 @@
 
     $query = "UPDATE tb_latihan1 INTO (id,nama,jenis_kelamin,kelas,alamat,no_telp)
             SET
-         id = '$ID', nama = '$NAMA', 
+         id = '$ID', 
+         nama = '$NAMA', 
          jenis_kelamin = '$JENKEL', 
          alamat = '$ALAMAT', 
          no_telp='$No_hape' 
          WHERE id = $_GET[id]";
 
-    $sql = mysqli_query($conn,$query);
+    $sql = mysqli_query($koneksi,$query);
 
          if($update == true){
 			echo"<script>
-			    	alert('Data Berhasil di update');
+			    	comfirm('Anda Yakin Ingin Mengubah?');
 					document.location.href='index.php';
 				</script>";
 		}else{
