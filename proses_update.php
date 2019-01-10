@@ -8,7 +8,7 @@
     $ALAMAT = $_POST["alamat"];
     $No_hape = $_POST["telp"];
 
-    $query = "UPDATE tb_latihan1 INTO (id,nama,jenis_kelamin,kelas,alamat,no_telp)
+    $query = "UPDATE tb_latihan1 (id,nama,jenis_kelamin,kelas,alamat,no_telp)
             SET
          id = '$ID', 
          nama = '$NAMA', 
