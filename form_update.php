@@ -15,7 +15,9 @@
 </head>
  <body>
  	<?php 
- 		
+ 		$query="SELECT * FROM tb_latihan1 WHERE id = '$_GET[id]'";
+ 		$hasil=mysqli_query($conn,$query);
+ 		$row=mysqli_fetch_array($hasil);
  	 ?>
 	<form action="proses_update.php" method="post">
 <center>
@@ -24,11 +26,11 @@
 	<table>
 <tr>
 	<td>ID</td>
-	<td><input type="text" name="id" value="" readonly></td>
+	<td><input type="text" name="id" value="<?php echo $user_data['id']; ?>" readonly></td>
 </tr>
 <tr> 
 	<td> Nama </td>
-	<td> <input type="text" name="nama" value=""></td>
+	<td> <input type="text" name="nama" value=" <?php echo $user_data['nama'];?>"></td>
 </tr>
 <tr> 
 	<td> Jenis Kelamin </td>
@@ -40,19 +42,19 @@
 <tr> 
 	<td> Kelas </td>
 	<td>
-		 <input type="text" name="kelas" value="">
+		 <input type="text" name="kelas" value="<?php echo $user_data['kelas']; ?>">
 	</td>
 </tr>
 <tr> 
 	<td> Alamat </td>
 	<td> 
-		 <textarea name="alamat" ></textarea>
+		 <textarea name="alamat" ><?php echo $user_data['alamat']; ?></textarea>
 	</td>
 </tr>
 <tr> 
 	<td> No Telepon </td>
 	<td>
-		 <input type="text" name="telp" value="">
+		 <input type="text" name="telp" value="<?php echo $user_data['no_telp'];  ?>">
 	</td>
 </tr>
 <tr> 
