@@ -13,7 +13,7 @@ $query = "INSERT into tb_latihan1 (nama,jenis_kelamin,kelas,alamat,no_telp)
 $hasil = mysqli_query($conn ,$query);
 	
 if ($hasil){
-	header ("location:indexx.php");
+	header ("location:index.php");
 }
 else {
 	echo "Input Gagal";
