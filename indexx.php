@@ -1,7 +1,6 @@
 <?php
-include("koneksi.php");
-
-$result = mysqli_query($mysqli, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
+include "koneksi.php";
+$result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
 ?>
 
 <html>
@@ -10,7 +9,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
 </head>
 
 <body>
-<a href="#">Tambah Data</a><br/><br/>
+<a href="forminsert.php">Tambah Data</a><br/><br/>
 
     <table width='80%' border=1>
 

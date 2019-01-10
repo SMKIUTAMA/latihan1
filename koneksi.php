@@ -1,1 +1,1 @@
-<?php $conn= mysqli_connect('localhost','db_latihan_github','root',''); ?>
+<?php $conn = mysqli_connect('localhost','root','','db_latihan_github'); ?>

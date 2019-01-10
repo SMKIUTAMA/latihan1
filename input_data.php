@@ -10,7 +10,7 @@ $No_telp        = $_POST['no_telp'];
 
 $query = "INSERT into tb_siswa (nama,jenis_kelamin,kelas,alamat,no_telp) 
 	  VALUES ('$Nama','$Jenis_kelamin','$Kelas','$Alamat','$No_telp')";
-$hasil = mysqli_query($koneksi,$query);
+$hasil = mysqli_query($conn ,$query);
 	
 if ($hasil){
 	header ("location:index.php");

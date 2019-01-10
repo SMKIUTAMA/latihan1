@@ -17,11 +17,11 @@
          no_telp='$No_hape' 
          WHERE id = $_GET[id]";
 
-    $sql = mysqli_query($koneksi,$query);
+    $sql = mysqli_query($conn,$query);
 
          if($update == true){
 			echo"<script>
-			    	comfirm('Anda Yakin Ingin Mengubah?');
+			    	confirm('Anda Yakin Ingin Mengubah?');
 					document.location.href='index.php';
 				</script>";
 		}else{
