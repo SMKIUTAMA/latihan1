@@ -28,7 +28,7 @@
 <tr> 
 	<td> Jenis Kelamin </td>
 	<td> 
-		<input type="radio" name="jenkel" value="laki"> Laki-Laki
+		<input type="radio" name="jenkel" value="laki-laki"> Laki-Laki
 		 <input type="radio" name="jenkel" value="perempuan"> Perempuan
     </td>
 </tr>
