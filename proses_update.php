@@ -22,12 +22,12 @@
          if($update == true){
 			echo"<script>
 			    	confirm('Anda Yakin Ingin Mengubah?');
-					document.location.href='index.php';
+					document.location.href='indexx.php';
 				</script>";
 		}else{
 			echo"<script>
 					alert('Data Gagal di update');
-					document.location.href='index.php';
+					document.location.href='indexx.php';
                 </script>";
     }
 ?>
