@@ -16,7 +16,7 @@
 
 </head>
 <body>
-	<form action="inputdata.php" method="post">
+	<form action="input_data.php" method="post">
 <center>
 <h1> Form Pengisian </h1>
 <br>
