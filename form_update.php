@@ -18,7 +18,7 @@
  		include "koneksi.php";
  		$query="SELECT * FROM tb_latihan1 WHERE id = '$_GET[id]'";
  		$hasil=mysqli_query($conn,$query);
- 		$row=mysqli_fetch_array($hasil);
+ 		$user_data=mysqli_fetch_array($hasil);
  	 ?>
 	<form action="proses_update.php" method="post">
 <center>
@@ -27,7 +27,7 @@
 	<table>
 <tr>
 	<td>ID</td>
-	<td><input type="text" name="id" value="<?php echo $user_data['id']; ?>" readonly></td>
+	<td><input type="text" name="id" value="<?php echo $user_data["id"]; ?>" readonly></td>
 </tr>
 <tr> 
 	<td> Nama </td>
