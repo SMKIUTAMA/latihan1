@@ -1,6 +1,6 @@
 <?php
 include "koneksi.php";
-$result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
+$result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id");
 ?>
 
 <html>
