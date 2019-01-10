@@ -1,6 +1,6 @@
 <?php
 include "koneksi.php";
-$result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
+$result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id");
 ?>
 
 <html>
@@ -31,7 +31,7 @@ $result = mysqli_query($conn, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
         echo "<td>".$user_data['kelas']."</td>"; 
         echo "<td>".$user_data['alamat']."</td>"; 
         echo "<td>".$user_data['no_telp']."</td>"; 
-        echo "<td><a href='form_update.php?id=$user_data[id]'>Edit</a> | <a href='#?id=$user_data[id]'>Delete</a></td></tr>";        
+        echo "<td><a href='form_update.php?id=$user_data[id]'>Edit</a> | <a href='hapus.php?id=$user_data[id]'>Delete</a></td></tr>";        
     }
     ?>
     </table>
