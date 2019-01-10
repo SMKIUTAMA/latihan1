@@ -1,7 +1,7 @@
 <?php
-include_once("config.php");
+include("koneksi.php");
 
-$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM tb_latihan1 ORDER BY id DESC");
 ?>
 
 <html>
@@ -15,7 +15,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
     <table width='80%' border=1>
 
     <tr>
-        <th>Id</th> <th>Nama</th> <th>Jenis Kelamin</th> <th>Kelas</th> <th>Alamat</th> <th>No Telepon</th> <th>Opsi</th>
+        <th>Id</th>
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Kelas</th>
+        <th>Alamat</th>
+        <th>No Telepon</th>
+        <th>Opsi</th>
     </tr>
     <?php  
     while($user_data = mysqli_fetch_array($result)) {         
@@ -26,7 +32,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
         echo "<td>".$user_data['kelas']."</td>"; 
         echo "<td>".$user_data['alamat']."</td>"; 
         echo "<td>".$user_data['no_telp']."</td>"; 
-        echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";        
+        echo "<td><a href='form_update.php?id=$user_data[id]'>Edit</a> | <a href='#?id=$user_data[id]'>Delete</a></td></tr>";        
     }
     ?>
     </table>
