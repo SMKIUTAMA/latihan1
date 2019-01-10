@@ -54,7 +54,7 @@
 <tr> 
 	<td> No Telepon </td>
 	<td>
-		 <input type="text" name="telp" value="<?php echo $user_data['no_telp'];  ?>">
+		 <input type="text" name="telp" value="<?php echo $user_data['no_telp'];?>">
 	</td>
 </tr>
 <tr> 
