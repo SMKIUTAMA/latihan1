@@ -8,26 +8,24 @@
     $ALAMAT = $_POST["alamat"];
     $No_hape = $_POST["telp"];
 
-    $query = "UPDATE tb_latihan1 (id,nama,jenis_kelamin,kelas,alamat,no_telp)
+    $query = "UPDATE tb_latihan1
             SET
          id = '$ID', 
          nama = '$NAMA', 
-         jenis_kelamin = '$JENKEL', 
+         jenis_kelamin = '$JENKEL',
+         kelas = '$KELAS',
          alamat = '$ALAMAT', 
          no_telp='$No_hape' 
-         WHERE id = $_GET[id]";
+         WHERE id = '$ID'";
 
     $sql = mysqli_query($conn,$query);
 
-         if($update == true){
+         if($sql){
 			echo"<script>
 			    	alert('Data berhasil diubah');
 					document.location.href='index.php';
 				</script>";
 		}else{
-			echo"<script>
-					alert('Data Gagal di update');
-					document.location.href='index.php';
-                </script>";
+			echo"gagal diupdate";
     }
 ?>
